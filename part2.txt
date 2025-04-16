@@ -1,1 +1,15 @@
 Fill in the passphrases here.
+
+Question 1: WongAvery
+Question 2: iHateC++
+Question 3: HTML Rules
+Question 4: Javascript sucks
+Question 5: ShraviBeatsReact
+Question 6: ThisIsJSyay
+Question 7: SofiaWasHere
+Question 8: coolcoolcool3x
+Question 9: 2020 sucked
+Question 10: listenToTheBlackKeys
+Question 11: ElaineFirst
+Question 12: iHeartWebDev
+
