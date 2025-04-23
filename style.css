@@ -76,7 +76,7 @@ Position: Done
     padding-left: 15px;
   }
   
-  form {
+  h4 ~ form {
     /* Padding shorthand */
     padding: 10px 15px 20px 15px;
   }
@@ -109,7 +109,7 @@ Position: Done
     margin: 0 3px;
   }
   
-  img {
+  details + img {
     display: block; 
     max-width: 100%;
     margin: 1rem auto;
@@ -135,6 +135,9 @@ Position: Done
     position: relative; /* Position - 2 */
     bottom: 0;
     padding: 1rem;
+    &:hover {
+        border: 3px dotted #73AD21;
+    }
   }
   
   /* Pseudo-classes */
@@ -184,70 +187,42 @@ Position: Done
     color: red;
   }
 
-  
+  *
+  {
+    margin: 0;
+  }
 
-  /* Responsive design with media queries */
-  @media screen and (max-width: 768px) {
-    body {
-      padding: 1rem;
-    }
-    
-    main {
-      flex-direction: column;
-    }
-    
-    h1 {
-      font-size: 2em;
-    }
-    
-    h2 {
-      font-size: 18pt;
-    }
+  li[class = "a"]
+  {
+    color: grey;
   }
-  
-  /* Custom styling for specific elements */
-  span:nth-child(1) {
-    background-color: blue;
-    color: white;
+
+  li[class~="a"]
+  {
+    font-size: 120%;
   }
-  
-  span:nth-of-type(2) {
-    background-color: red;
-    color: white;
+
+  body h2
+  {
+    font-size: 110%;
+    font: Arial;
   }
-  
-  span:nth-of-type(3) {
-    background-color: gray;
-    color: white;
+
+  section ul > li
+  {
+    border-top: 5px dotted cyan;
   }
-  
-  /* Additional units - absolute */
-  details {
-    padding: 0.5in; /* Absolute unit - 3 */
+
+  section.a
+  {
+    border-top: 10px solid red;
   }
-  
-  /* Custom button styling */
-  button {
-    background-color: #ff9800;
-    padding: 0.5rem 1rem;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s;
+
+  h3:has(+ol)
+  {
+    background-color: white;
   }
-  
-  /* Submit button styling */
-  input[type="submit"] {
-    background-color: var(--accent-color);
-    color: white;
-    padding: 0.5rem 1rem;
-    border: none;
-    cursor: pointer;
-  }
-  
-  /* Form input styling */
-  input[type="text"], textarea, select {
-    width: 80%;
-    padding: 10px;
-    border: 2px dotted #ddd;
-  }
+
+
+
+
