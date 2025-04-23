@@ -1,0 +1,228 @@
+/*
+Color: all 5 done
+Fallback is in root
+Background Color in root
+
+Units: NEED TO CHECK
+
+Margin: long and short done
+Padding: long and short done
+Borders: done
+
+Text: Done
+
+Display: Done
+
+Sizing:
+
+Position: Done
+
+
+
+*/
+:root {
+    --primary-color: turquoise;
+    --secondary-color: #ffb732;
+    --accent-color: rgb(255, 255, 0);
+    --text-color: hsl(300, 76%, 72%);
+    --background-color: color-mix(in rgb, brown, #ffffff);
+  }
+  
+  /* Importing Google Font (3rd party font requirement) */
+  @import url('https://fonts.googleapis.com/css2?family=Marvel:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+  
+  body {
+    font-family: var(--font-main, Arial); /* CSS Variable with fallback */
+
+    line-height: 1.6;
+    margin: 0;
+    padding: 2rem; 
+  }
+  
+  main {
+    padding: 2vw; 
+    border-radius: 8px;
+    max-width: 1000px;
+    margin: 0;
+  }
+  
+  section {
+    margin-top: 2rem;
+    margin-right: 1rem;
+    margin-bottom: 2rem;
+    margin-left: 1rem;
+    background-color: rgb(227, 103, 252);
+  }
+  
+  nav {
+    /* Margin shorthand */
+    margin: 1.5rem 1rem 1.5rem 1rem;
+    text-align: center;
+  }
+  
+  footer {
+    /* Auto margin example */
+    margin: auto;
+    width: 80%;
+    text-align: center;
+  }
+  
+  /* Box Model - Padding (both long and short syntax) */
+  section {
+    /* Padding longhand */
+    padding-top: 20px;
+    padding-right: 15px;
+    padding-bottom: 20px;
+    padding-left: 15px;
+  }
+  
+  h4 ~ form {
+    /* Padding shorthand */
+    padding: 10px 15px 20px 15px;
+  }
+  
+  section {
+    border-style: flex;
+    border-color: var(--primary-color);
+    border-width: 5px;
+  }
+  
+  fieldset {
+    border: 2px dashed var(--secondary-color);
+  }
+  
+  p {
+    color: #555;
+    text-decoration: none;
+    text-align: center;
+  }
+  
+  a {
+    color: var(--primary-color);
+    text-decoration: underline;
+  }
+  
+  span {
+    display: inline-block;
+    padding: 2px 5px;
+    border-radius: (3px);
+    margin: 0 3px;
+  }
+  
+  details + img {
+    display: block; 
+    max-width: 100%;
+    margin: 1rem auto;
+  }
+  
+  /* Sizing properties */
+  video, audio {
+    width: 100%;
+    max-width: 500px;
+    min-width: 200px;
+    height: auto;
+  }
+  
+  /* Position properties */
+  nav {
+    position: static; 
+    top: 0;
+    background-color: white;
+    z-index: 100;
+  }
+  
+  footer {
+    position: relative; /* Position - 2 */
+    bottom: 0;
+    padding: 1rem;
+    &:hover {
+        border: 3px dotted #73AD21;
+    }
+  }
+  
+  /* Pseudo-classes */
+  a:hover {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+  }
+  
+  button:active {
+    background-color: rgb(125, 74, 74);
+    color: white;
+  }
+  
+  /* Flexbox layout */
+  main {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 4;
+    flex-shrink: 1;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  /* Grid layout */
+  form {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 10px;
+    grid-auto-rows: minmax(30px, auto);
+    align-items: center;
+  }
+  
+  fieldset {
+    grid-column: 1 / span 2;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 30px;
+  }
+
+  .highlight
+  {
+    background-color: yellow;
+  }
+
+  #team
+  {
+    color: red;
+  }
+
+  *
+  {
+    margin: 0;
+  }
+
+  li[class = "a"]
+  {
+    color: grey;
+  }
+
+  li[class~="a"]
+  {
+    font-size: 120%;
+  }
+
+  body h2
+  {
+    font-size: 110%;
+    font: Arial;
+  }
+
+  section ul > li
+  {
+    border-top: 5px dotted cyan;
+  }
+
+  section.a
+  {
+    border-top: 10px solid red;
+  }
+
+  h3:has(+ol)
+  {
+    background-color: white;
+  }
+
+
+
+
